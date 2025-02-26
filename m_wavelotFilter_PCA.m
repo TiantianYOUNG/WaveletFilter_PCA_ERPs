@@ -57,7 +57,7 @@
 
 % by Yang Tiantian, written with MATLAB 2016b, in Jyvaskyla University
 %%
-clear all
+clear
 close all;
 clc
 tic
@@ -97,7 +97,7 @@ end
 
 %% PCA
 
-[coeff,score,lambda] = princomp(X_temporal');
+[coeff,score,lambda] = pca(X_temporal','economy',false);
 %% 
 K = 8;% the number of components
    
